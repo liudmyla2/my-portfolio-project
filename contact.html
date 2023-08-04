@@ -34,20 +34,131 @@
     <title>Document</title>
   </head>
   <body>
+    <div class="container">
+      <nav class="d-flex justify-content-between">
+        <a href="index.html">
+          <img
+            src="images/logo.png"
+            alt="logo"
+            class="logo d-none d-md-block"
+          />
+          <img
+            src="images/small logo.png"
+            alt="small logo"
+            class="logo d-block d-md-none"
+          />
+        </a>
+        <ul>
+          <li>
+            <a href="/index.html" title="Homepage">Home</a>
+          </li>
+          <li>
+            <a href="/about.html" title="About liudmyla-kostiuk-5156ab42"
+              >About</a
+            >
+          </li>
+          <li><a href="/work.html" title="Liudmyla's work">Work</a></li>
+          <li class="active">
+            <a href="/contact.html" title="Contact Liudmyla">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <div class="content-container container">
       <div class="content">
         <h1 class="mb-5">Let's get in touch!</h1>
-        <h3>Email</h3>
-        <p>
-          <a href="mailto:lyudmila.kostyuk@gmail.com"
-            >lyudmila.kostyuk@gmail.com</a
-          >
-        </p>
-        <h3>Twitter</h3>
-        <p>@liudmyla</p>
-        <h3>Instagram</h3>
-        <p>liudmyla</p>
+        <div class="row">
+          <div class="col-md-8">
+            <form
+              action="https://formspree.io/f/mwkalajy"
+              method="POST"
+              class="border p-3 rounded mb-3"
+            >
+              <div class="mb-3">
+                <label class="form-label"> Your email: </label>
+                <input
+                  type="email"
+                  name="_replyto"
+                  class="form-control"
+                  required
+                  autofocus
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label"> Your message: </label>
+                <textarea
+                  name="message"
+                  class="form-control"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-branding">Send</button>
+            </form>
+          </div>
+          <div class="col-md-4">
+            <h3>Email</h3>
+            <p>
+              <a href="mailto:lyudmila.kostyuk@gmail.com">
+                lyudmila.kostyuk@gmail.com
+              </a>
+            </p>
+            <h3>GitHub</h3>
+            <p>
+              <a href="https://github.com/liudmyla2" target="_blank">
+                My GitHub Profile
+              </a>
+            </p>
+            <h3>LinkedIn</h3>
+            <p>
+              <a
+                href="https://www.linkedin.com/in/liudmyla-kostiuk-5156ab42/"
+                target="_blank"
+              >
+                My LinkedIn Profile
+              </a>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
+    <footer class="container">
+      <div class="contact-box justify-content-between mb-5 d-none d-md-flex">
+        <div>
+          <h4>Work Inquiry</h4>
+          <p class="text-muted">Let's work together</p>
+        </div>
+        <div>
+          <a href="contact.html" class="btn btn-branding mt-3">Contact me</a>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center mb-5">
+        <a href="mailto: lyudmila.kostyuk@gmail.com" class="email-link"
+          >lyudmila.kostyuk@gmail.com</a
+        >
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a
+          href="https://www.linkedin.com/in/liudmyla-kostiuk-5156ab42/"
+          target="_blank"
+          title="LinkedIn Profile"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a
+          href="https://github.com/liudmyla2"
+          target="_blank"
+          title="GitHub Profile"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
+      <p class="text-center mt-4">
+        ✌️ This project was coded by Liudmyla Kostiuk, and it is
+        <a
+          href="https://github.com/liudmyla2/my-portfolio-project"
+          target="_blank"
+          >open-sourced</a
+        >
+      </p>
+    </footer>
   </body>
 </html>

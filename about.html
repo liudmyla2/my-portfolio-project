@@ -34,11 +34,39 @@
     <title>Document</title>
   </head>
   <body>
+    <div class="container">
+      <nav class="d-flex justify-content-between">
+        <a href="index.html">
+          <img
+            src="images/logo.png"
+            alt="logo"
+            class="logo d-none d-md-block"
+          />
+          <img
+            src="images/small logo.png"
+            alt="small logo"
+            class="logo d-block d-md-none"
+          />
+        </a>
+        <ul>
+          <li>
+            <a href="/index.html" title="Homepage">Home</a>
+          </li>
+          <li class="active">
+            <a href="/about.html" title="About liudmyla-kostiuk-5156ab42"
+              >About</a
+            >
+          </li>
+          <li><a href="/work.html" title="Liudmyla's work">Work</a></li>
+          <li><a href="/contact.html" title="Contact Liudmyla">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
     <div class="about-section container">
       <div class="row">
         <div class="col-md-6">
           <div class="about-section-content">
-            <h1 class="mb-4">Hi! I am Liudmyla Kostiuk</h1>
+            <h1 class="mb-4">Hi, I'm Liudmyla Kostiuk</h1>
             <h2 class="mb-4">
               A passionate Front-End Developer with a flair for crafting
               captivating and user-centric web experiences
@@ -52,7 +80,7 @@
               ideas to fruition. Let's connect and embark on a journey to shape
               the future of the web together!
             </p>
-            <a href="#" class="btn btn-branding">See my projects</a>
+            <a href="work.html" class="btn btn-branding">See my projects</a>
           </div>
         </div>
         <div class="col-lg-6">
@@ -64,5 +92,44 @@
         </div>
       </div>
     </div>
+    <footer class="container">
+      <div class="contact-box justify-content-between mb-5 d-none d-md-flex">
+        <div>
+          <h4>Work Inquiry</h4>
+          <p class="text-muted">Let's work together</p>
+        </div>
+        <div>
+          <a href="contact.html" class="btn btn-branding mt-3">Contact me</a>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center mb-5">
+        <a href="mailto: lyudmila.kostyuk@gmail.com" class="email-link"
+          >lyudmila.kostyuk@gmail.com</a
+        >
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a
+          href="https://www.linkedin.com/in/liudmyla-kostiuk-5156ab42/"
+          target="_blank"
+          title="LinkedIn Profile"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a
+          href="https://github.com/liudmyla2"
+          target="_blank"
+          title="GitHub Profile"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
+      <p class="text-center mt-4">
+        ✌️ This project was coded by Liudmyla Kostiuk, and it is
+        <a
+          href="https://github.com/liudmyla2/my-portfolio-project"
+          target="_blank"
+          >open-sourced</a
+        >
+      </p>
+    </footer>
   </body>
 </html>
